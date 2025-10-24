@@ -1,0 +1,455 @@
+<!--Web de las categorías de la Tarea Evaluable2 (Lenguaje de Marcas)-->
+
+<!DOCTYPE html5>
+<html lang = es>
+<head>
+    <meta charset="utf-8">
+    <!--Título de la pagina -->
+    <title>PÁGINA DE ENTRADA</title>
+    <!--Fichero de estilos utilizado en la página-->
+    <link rel = stylesheet href="./estilos/estilos.CSS">
+</head>
+<body>
+    <header>
+        <h1><b>ENCUENTRATUPELI</b></h1>
+    </header>
+    <!--Creamos la barra de navegación que nos dará acceso a las 5 páginas web-->
+     <nav class="navbar"> <!--Creamos la clase navbar para darle formato desde CSS-->
+        <ul> <!--Establecemos las 5 referencias, una a cada página web-->
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="categorias.html">Categorías</a></li>
+            <li><a href="peliculas.html">Películas</a></li>
+            <li><a href="estrenos.html">Estrenos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!--Creamos una segunda barra de navegación que nos dará acceso a las 7 categorías-->
+    <nav class="navbar2"> <!--Creamos la clase navbar2 para darle formato desde CSS-->
+        <ul> <!--Establecemos enlaces a las 7 categorías que incluiremos dentro de esta misma página-->
+            <li><a href="#AyA">Acción y Aventura</a></li>
+            <li><a href="#Comedia">Comedia</a></li>
+            <li><a href="#Drama">Drama</a></li>
+            <li><a href="#CFyF">Ciencia Ficción y Fantasía</a></li>
+            <li><a href="#TyS">Terror y Suspense</a></li>
+            <li><a href="#Docu">Documentales</a></li>
+            <li><a href="#IyF">Infantiles y Familiares</a></li>
+        </ul>
+    </nav>
+    
+<!--Definimos un contenedor general que utilizaremos para mostrar a nuestro gusto las diferentes categorías-->
+    <main id= "contenedor-general">
+
+    <!-- CATEGORIA 1 - Acción y Aventura --> <!--Creamos un contenedor para dar formato al contenedor donde irá cada categoría-->
+        <section id="AyA" class="contenedor-principal-cat">
+            <h2>Acción y Aventuras</h2>
+            <!--Dentro de cada sección creamos 2 articulos, porque queremos ver 2 columnas-->
+            <!-- Columna izquierda -- Portada + Títulos películas -->
+                <article class="pelicula">
+                    <section class="columna-izquierda">
+                        <h3>1.- Narnia: El León, la bruja y el armario</h3>
+                        <img src="./img/Narnia.jpg" alt="Narnia">
+                    </section>
+                    <section class="columna-derecha">
+                        <h4><b>Fecha filmación: 2005</b></h4>
+                        <h4><b>Director: Michael Apted</b>
+                        <ul><b>Actores destacados:</b>
+                            <p></p> <!--Dejamos un espacio entre el encabezado del listado y los elementos que lo componen-->
+                            <li>William Moseley</li>
+                            <li>Will Poulter</li>
+                            <li>Liam Neeson</li>
+                            <li>Peter Dinklage</li>
+                        </ul>
+                    </section>
+                </article> 
+                <article class="pelicula">
+                    <section class="columna-izquierda">
+                        <h3>2.- Avatar</h3>
+                        <img src="./img/Avatar.jpg" alt="Narnia">
+                    </section>
+                    <section class="columna-derecha">
+                        <h4><b>Fecha filmación: 2009</b></h4>
+                        <h4><b>Director: James Cameron</b>
+                        <ul><b>Actores destacados:</b>
+                            <p></p> <!--Dejamos un espacio entre el encabezado del listado y los elementos que lo componen-->
+                            <li>Sam Worthington</li>
+                            <li>Zoe Saldaña</li>
+                            <li>Kate Winslet</li>
+                            <li>Michelle Rodriguez</li>
+                        </ul>
+                    </section>
+                </article> 
+                <article class="pelicula">
+                    <section class="columna-izquierda">
+                        <h3>3.- Gladiator</h3>
+                        <img src="./img/Gladiator.jpg" alt="Narnia">
+                    </section>
+                    <section class="columna-derecha">
+                        <h4><b>Fecha filmación: 2000</b></h4>
+                        <h4><b>Director: Ridley Scott</b>
+                        <ul><b>Actores destacados:</b>
+                            <p></p> <!--Dejamos un espacio entre el encabezado del listado y los elementos que lo componen-->
+                            <li>Rusell Crowe</li>
+                            <li>Joaquin Phoenix</li>
+                            <li>Connie Nielsen</li>
+                            <li>Oliver Reed</li>
+                        </ul>
+                    </section>
+                </article> 
+        </section>
+
+    <!--REPLICAMOS LA MISMA ESTRUCTURA PARA EL RESTO DE CATEGORÍAS-->
+    <!-- CATEGORÍA 2 --COMEDIA -->
+
+        <section id="Comedia" class="contenedor-principal-cat">
+            <h2>Comedia</h2>
+            <!--Dentro de cada sección creamos 2 articulos, porque queremos ver 2 columnas-->
+            <!-- Columna izquierda -- Portada + Títulos películas -->
+                <article class="pelicula">
+                    <section class="columna-izquierda">
+                        <h3>1.- El lado bueno de las cosas</h3>
+                        <img src="./img/Elladobuenodelascosas.jpg" alt="Narnia">
+                    </section>
+                    <section class="columna-derecha">
+                        <h4><b>Fecha filmación: 2012</b></h4>
+                        <h4><b>Director: David O. Rusell</b>
+                        <ul><b>Actores destacados:</b>
+                            <p></p>
+                            <li>Bradley Cooper</li>
+                            <li>Robert de Niro</li>
+                            <li>Jennifer Lawrence</li>
+                            <li>Chris Tucker</li>
+                        </ul>
+                    </section>
+                </article> 
+                <article class="pelicula">
+                    <section class="columna-izquierda">
+                        <h3>2.- Solo en casa</h3>
+                        <img src="./img/SoloEnCasa.jpg" alt="Narnia">
+                    </section>
+                    <section class="columna-derecha">
+                        <h4><b>Fecha filmación: 1990
+                        <h4><b>Director: Chris Columbus</b></h4>
+                        <ul><b>Actores destacados:</b>
+                            <p></p>
+                            <li>Macaulay Culkin</li>
+                            <li>Joe Pesci</li>
+                            <li>Daniel Stern</li>
+                            <li>Kieran Culkin</li>
+                        </ul>
+                    </section>
+                </article> 
+                <article class="pelicula">
+                    <section class="columna-izquierda">
+                        <h3>3.- La vida de Brian</h3>
+                        <img src="./img/LaVidaDeBrian.jpg" alt="Narnia">
+                    </section>
+                    <section class="columna-derecha">
+                        <h4><b>Fecha filmación: 1979</b></h4>
+                        <h4><b>Director: Terry Jones</b></h4>
+                        <ul><b>Actores destacados:</b>
+                        <ul>
+                            <p></p>
+                            <li>Terry Jones</li>
+                            <li>John Cleese</li>
+                            <li>Graham Chapman</li>
+                            <li>Terry Gilliam</li>
+                        </ul>
+                    </section>
+                </article> 
+        </section>
+
+    <!-- CATEGORÍA 3 --DRAMA -->
+
+        <section id="Drama" class="contenedor-principal-cat">
+                <h2>Drama</h2>
+                <!--Dentro de cada sección creamos 2 articulos, porque queremos ver 2 columnas-->
+                <!-- Columna izquierda -- Portada + Títulos películas -->
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>1.- La vida es bella</h3>
+                            <img src="./img/Lavidaesbella.jpg" alt="La visa es bella">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 1997</b></h4>
+                            <h4><b>Director: Roberto Benigni</b></h4>
+                            <ul><b>Actores destacados:</b>
+                                <p></p>
+                                <li>Roberto Benigni</li>
+                                <li>Nicoletta Braschi</li>
+                                <li>Giorgio Cantarini</li>
+                                <li>Amerigo Fontani</li>
+                            </ul>
+                        </section>
+                    </article> 
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>2.- Cadena perpetua</h3>
+                            <img src="./img/CadenaPerpetua.jpg" alt="Cadena perpetua">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 2022</b>
+                            <h4><b>Director: Fernando Meirelles</b></h4>
+                            <ul>Actores destacados:
+                                <p></p>
+                                <li>Alice Braga</li>
+                                <li>Alexandre Rodrigues</li>
+                                <li>Douglas Silva</li>
+                                <li>Phellipe Haagensen</li>
+                            </ul>
+                        </section>
+                    </article> 
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>3.- Ciudad de Dios</h3>
+                            <img src="./img/CiudadDeDios.jpg" alt="Ciudad de Dios">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 2000</b></h4>
+                            <h4><b>Director: Ridley Scott</b></h4>
+                            <ul><b>Actores destacados:</b>
+                            <p></p>
+                                <li>Rusell Crowe</li>
+                                <li>Joaquin Phoenix</li>
+                                <li>Connie Nielsen</li>
+                                <li>Oliver Reed</li>
+                            </ul>
+                        </section>
+                    </article> 
+        </section>
+
+    <!-- CATEGORÍA 4 --CIENCIA FICCIÓN Y FANTASÍA -->
+
+        <section id="CFyF" class="contenedor-principal-cat">
+                <h2>Ciencia Ficción y Fantasía</h2>
+                <!--Dentro de cada sección creamos 2 articulos, porque queremos ver 2 columnas-->
+                <!-- Columna izquierda -- Portada + Títulos películas -->
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>1.- Dune: Parte 2</h3>
+                            <img src="./img/Dune2.jpg" alt="Dune 2">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 1997</b></h4>
+                            <h4><b>>Director: Denis Villeneuve</b></h4>
+                            <ul><b>Actores destacados:</b>
+                                <p></p>
+                                <li>Roberto Benigni</li>
+                                <li>Nicoletta Braschi</li>
+                                <li>Giorgio Cantarini</li>
+                                <li>Amerigo Fontani</li>
+                            </ul>
+                        </section>
+                    </article> 
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>2.- El laberinto del fauno</h3>
+                            <img src="./img/ElLaberintoDelFauno.jpg" alt="El laberinto del fauno">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 2022
+                            <h4><b>Director: Guillermo del Toro</b></h4>
+                            <ul><b>Actores destacados:</b>
+                                <p></p>
+                                <li>Ivana Baquero</li>
+                                <li>Doug Jones</li>
+                                <li>Ariadna Gil</li>
+                                <li>Maribel Verdú</li>
+                            </ul>
+                        </section>
+                    </article> 
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                        <h3>3.- El efecto mariposa</h3>
+                        <img src="./img/ElEfectoMariposa.jpg" alt="El efecto mariposa">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 2000</b></h4>
+                            <h4><b>Director: Eric Bress</b></h4>
+                            <ul><b>Actores destacados:</b>
+                            <p></p>
+                                <li>Aston Kutcher</li>
+                                <li>Amy Smart</li>
+                                <li>Logan Lerman</li>
+                                <li>William Lee Scott</li>
+                            </ul>
+                        </section>
+                    </article> 
+        </section>
+
+    <!-- CATEGORÍA 5 --TERROR Y SUSPENSE -->
+        <section id="TyS" class="contenedor-principal-cat">
+                <h2>Terror y Suspense</h2>
+                <!--Dentro de cada sección creamos 2 articulos, porque queremos ver 2 columnas-->
+                <!-- Columna izquierda -- Portada + Títulos películas -->
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>1.- Expediente Warren: The Conjuring</h3>
+                            <img src="./img/ExpedienteWarren.jpg" alt="Expediente Warren">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 200</b></h4>
+                            <h4><b>Director: James Wan</b></h4>
+                            <ul><b>Actores destacados:</b>
+                                <p></p>
+                                <li>Vera Farmiga</li>
+                                <li>Patrick Wilson</li>
+                                <li>Sterling Jerins</li>
+                                <li>Shannon Kook</li>
+                            </ul>
+                        </section>
+                    </article> 
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>2.- La purga</h3>
+                            <img src="./img/LaPurga.jpg" alt="La Purga">
+                        </section>
+                        <section class="columna-derecha">
+                        <h4><b>Fecha filmación: 2013
+                        <h4><b>Director: James DeMonaco</b></h4>
+                        <p></p>
+                        <ul><b>Actores destacados:</b>
+                            <p></p>
+                            <li>Ethan Hawke</li>
+                            <li>Lena Headey</li>
+                            <li>Adelaide Kane</li>
+                            <li>Edwin Hodge</li>
+                        </ul>
+                        </section>
+                    </article> 
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>3.- El resplandor</h3>
+                            <img src="./img/ElResplandor.jpg" alt="El Resplandor">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 1980</b></h4>
+                            <h4><b>Director: Ridley Scott</b></h4>
+                            <ul><b>Actores destacados:</b>
+                            <p></p>
+                                <li>Jack Nicholson</li>
+                                <li>Shelley Duvall</li>
+                                <li>Danny Lloyd</li>
+                                <li>Lia Beldam</li>
+                            </ul>
+                        </section>
+                    </article> 
+        </section>
+
+    <!-- CATEGORÍA 6 --DOCUMENTALES -->
+
+        <section id="Docu" class="contenedor-principal-cat">
+                <h2>Documentales</h2>
+                <!--Dentro de cada sección creamos 2 articulos, porque queremos ver 2 columnas-->
+                <!-- Columna izquierda -- Portada + Títulos películas -->
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>1.- Lo que el pulpo me enseñó</h3>
+                            <img src="./img/LoQueElPulpoMeEnseño.jpg" alt="Lo que el Pulpo me enseñó">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 2020</b></h4>
+                            <h4><b>Director: Pippa Ehrilch</b></h4>
+                            <ul><b>Actores destacados:</b>
+                                <p></p>
+                                <li>Craig Foster</li>
+                                <li>Tom Foster</li>
+                            </ul>
+                        </section>
+                    </article> 
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>2.- Remando como un sólo hombre</h3>
+                            <img src="./img/RemandoComoUnSoloHombre.jpg" alt="Remando como un solo hombre">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 2009
+                            <h4><b>Director: George Clooney</b></h4>
+                            <ul><b>Actores destacados:</b></h4>
+                                <p></p>
+                                <li>Callum Turner</li>
+                                <li>Jack Mulhern</li>
+                                <li>Hadley Robinson</li>
+                                <li>Joel Edgerton</li>
+                            </ul>
+                        </section>
+                    </article> 
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>3.- Everest</h3>
+                            <img src="./img/Everest.jpg" alt="Everest">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 2015</b></h4>
+                            <h4><b>Director: Baltasar Kormákur</b></h4>
+                            <ul><b>Actores destacados:</b>
+                            <p></p>
+                                <li>Jake Gyllenhaal</li>
+                                <li>Josh Brolin</li>
+                                <li>Jason Clarke</li>
+                                <li>John Hawkes</li>
+                            </ul>
+                        </section>
+                    </article> 
+        </section>
+            
+    <!-- CATEGORÍA 7 --INFANTILES Y FAMILIARES -->
+
+        <section id="IyF" class="contenedor-principal-cat">
+                <h2>Infantiles y Familiares</h2>
+                <!--Dentro de cada sección creamos 2 articulos, porque queremos ver 2 columnas-->
+                <!-- Columna izquierda -- Portada + Títulos películas -->
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>1.- Los Goonies</h3>
+                            <img src="./img/LosGoonies.jpg" alt="Los Goonies">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 1985</b></h4>
+                            <h4><b>Director: Richard Donner</b></h4>
+                            <ul><b>Actores destacados:</b>
+                                <p></p>
+                                <li>Sean Astin</li>
+                                <li>Josh Brolin</li>
+                                <li>Corey Feldman</li>
+                                <li>Jeff Cohen</li>
+                            </ul>
+                        </section>
+                    </article> 
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>2.- Como entrenar a tu dragón</h3>
+                            <img src="./img/ComoEntrenarATuDragon.jpg" alt="Como entrenar a tu dragón">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 2010
+                            <h4><b>Director: Chris Sanders</b></h4>
+                            <ul><b>Doblajes destacados (al castellano) :</b>
+                                <p></p>
+                                <li>Jose Luis Angulo </li>
+                                <li>Laura Pastor</li>
+                                <li>Julio Lorenzo</li>
+                                <li>Adrián Viador</li>
+                            </ul>
+                        </section>
+                    </article> 
+                    <article class="pelicula">
+                        <section class="columna-izquierda">
+                            <h3>3.- Shrek</h3>
+                            <img src="./img/Shrek.jpg" alt="Shrek">
+                        </section>
+                        <section class="columna-derecha">
+                            <h4><b>Fecha filmación: 2001</b></h4>
+                            <h4><b>Director: Andrew Adamson</b></h4>
+                            <ul><b>Doblajes destacados (al castellano):</b>
+                            <ul>
+                                <li>Juan Muñoz</li>
+                                <li>José Mota</li>
+                                <li>Nuria Mediavilla</li>
+                                <li>Juan Carlos Gustems</li>
+                            </ul>
+                        </section>
+                    </article> 
+        </section>
+    </main>
+</body>

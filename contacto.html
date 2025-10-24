@@ -1,0 +1,70 @@
+<!--Web de contacto de la Tarea Evaluable2 (Lenguaje de Marcas)-->
+
+<!DOCTYPE html5>
+<html lang = es>
+<head>
+    <meta charset="utf-8">
+    <!--Título de la pagina -->
+    <title>CONTACTO</title>
+    <!--Fichero de estilos utilizado en la página-->
+    <link rel = stylesheet href="./estilos/estilos.CSS">
+</head>
+<body>
+    <header>
+        <h1><b>ENCUENTRATUPELI</b></h1>
+    </header>
+    <body>
+    <!--Creamos la barra de navegación que nos dará acceso a las 5 páginas web-->
+    <nav class="navbar"> <!--Creamos la clase navbar para darle formato desde CSS-->
+        <ul> <!--Establecemos las 5 referencias, una a cada página web-->
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="categorias.html">Categorías</a></li>
+            <li><a href="peliculas.html">Películas</a></li>
+            <li><a href="estrenos.html">Estrenos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--Generamos una sección para el formulario, será el contenido principal de esta página-->
+    <section>
+        <h2 class="intro-formulario"><b>Formulario de recomendaciones</b></h2>
+        <h3 style="font-size:40px">Puede recomendarnos una película rellenando el formulario que verá a continuación</h3>
+        <article>
+            <!--Formulario tipo get que añadirá la informado en la url de la página-->
+            <form id="form1" action="contacto.html" method = "get">
+                <fieldset class="formulario">
+                    <label>Nombre</label>
+                    <input class="input-form" type="text" id= "nombre1" name="nombre">
+                    <label>Primer Apellido</label>
+                    <input class="input-form" type="text" id= "apellido1" name="apellido">
+                    <label>Email</label>
+                    <input class="input-form" type="email" id= "email1" name="email">
+                    <label>Teléfono</label>
+                    <input class="input-form" type="number" id= "telefono1" name="telefono">
+                    <label>Película recomendada</label>
+                    <input class="input-form" type="text" id= "titulo1" name="titulo">
+                    <label>Selecciona la categoría</label>
+                    <select style="font-size:25px" id="modulo" name="modulo">
+                        <option value= "AyA">Acción y Aventura</option>
+                        <option value= "Comedia">Comedia</option>
+                        <option value= "Drama">Drama</option>
+                        <option value= "CFyF">Ciencia Ficción y Fantasía</option>
+                        <option value= "TyS">Terror y Suspense</option>
+                        <option value= "Docu">Documentales</option>
+                        <option value= "IyF">Infantiles y Familiares</option>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form> 
+        </article>
+    </section>
+        <footer class="pie-pagina">
+        <h3><b>ENCUENTRATUPELI </b></h3>
+        <p><b>COLABORACIONES</b></p>
+        <ul>
+            <li>Netflix</li>
+            <li>Amazon Prime</li>
+            <li>HBO</li>
+            <li>IMDB</li>
+            <li>Filmaffinity</li>
+        </ul>
+    </footer>
+</body>

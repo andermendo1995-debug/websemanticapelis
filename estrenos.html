@@ -1,0 +1,135 @@
+<!--Página sobre estrenos de la Tarea Evaluable2 (Lenguaje de Marcas)-->
+
+<!DOCTYPE html5>
+<html lang = es>
+<head>
+    <meta charset="utf-8">
+    <!--Título de la pagina -->
+    <title>ESTRENOS</title>
+    <!--Fichero de estilos utilizado en la página-->
+    <link rel = stylesheet href="./estilos/estilos.CSS">
+</head>
+<body>
+    <header>
+        <h1><b>ENCUENTRATUPELI</b></h1>
+    </header>
+    <body>
+    <!--Creamos la barra de navegación que nos dará acceso a las 5 páginas web-->
+    <nav class="navbar"> <!--Creamos la clase navbar para darle formato desde CSS-->
+        <ul> <!--Establecemos las 5 referencias, una a cada página web-->
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="categorias.html">Categorías</a></li>
+            <li><a href="peliculas.html">Películas</a></li>
+            <li><a href="estrenos.html">Estrenos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main id="Estrenos" class="cont-ppal-est">
+        <!--Establecemos la primera sección donde simplemente mostraremos algunos estrenos próximos-->
+        <section class="Estrenos">
+            <h2>Estrenos</h2>
+            <h3>Bala Perdida</h3>
+            <img src="./img/BalaPerdida.jpg">
+            <h3>Fecha de estreno: 10 de octubre de 2025</h3>
+            <h3>Vieja Loca</h3>
+            <img src="./img/ViejaLoca.jpg">
+            <h3>Fecha de estreno: 10 de octubre de 2025</h3>
+            <h3>Tron: Ares</h3>
+            <img src="./img/TronAres.jpg">
+            <h3>Fecha de estreno: 10 de octubre de 2025</h3>
+        </section>
+
+        <!--Establecemos la segunda sección, aquí irá el calendario de eventos, sólo del mes de Noviembre, lo actualizaremos cada mes, para ellos generaremos una tabla-->
+        <section class=Eventos>
+            <h2>Calendario de eventos</h2>
+                <!-- Calendario de Noviembre 2025 -->
+    <table class="calendario">
+        <thead>
+            <tr>
+                <th>Lun</th>
+                <th>Mar</th>
+                <th>Mié</th>
+                <th>Jue</th>
+                <th>Vie</th>
+                <th>Sáb</th>
+                <th>Dom</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>
+                    <a class="evento" href="https://festivalcinesevilla.eu/" target="_blank">Festival de Cine Europeo</a> <!--ñadimos tarjet_blank para que abra una nueva pestaña en el navegador en lugar de reemplazar la actual-->
+                </td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>
+                    <a class="evento" href="https://www.kulturklik.euskadi.eus/evento/2025/11/21/programa-zinebi-2025-festival-internacional-de-cine-documental-y-cortometraje-de-bilbao/webkklik00-detalle/es/" target="_blank">ZINEBI (Cortometrajes y Documentales)</a>
+                </td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+        </section>
+    </main>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 
+   
+    <footer class="pie-pagina">
+        <h3><b>ENCUENTRATUPELI </b></h3>
+        <p><b>COLABORACIONES</b></p>
+        <ul>
+            <li>Netflix</li>
+            <li>Amazon Prime</li>
+            <li>HBO</li>
+            <li>IMDB</li>
+            <li>Filmaffinity</li>
+        </ul>
+    </footer>
+</body>

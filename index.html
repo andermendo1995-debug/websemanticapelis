@@ -1,0 +1,134 @@
+<!--Página principal de la Tarea Evaluable2 (Lenguaje de Marcas)-->
+<!--Posicionamiento usando flexbox-->
+
+<!DOCTYPE html5>
+<html lang = es>
+<head>
+    <meta charset="utf-8">
+    <!--Título de la pagina -->
+    <title>PRINCIPAL</title>
+    <!--Fichero de estilos utilizado en la página-->
+    <link rel = stylesheet href="./estilos/estilos.CSS">
+</head>
+<body>
+    <!--Definimos la cabecera de la página principal (NOMBRE DE LA WEB)-->
+    <header>
+        <h1><b>ENCUENTRATUPELI</b></h1>
+    </header>
+    <!--Creamos la barra de navegación que nos dará acceso a las 5 páginas web-->
+    <nav class="navbar"> <!--Creamos la clase navbar para darle formato desde CSS-->
+        <ul> <!--Establecemos las 5 referencias, una a cada página web-->
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="categorias.html">Categorías</a></li>
+            <li><a href="peliculas.html">Películas</a></li>
+            <li><a href="estrenos.html">Estrenos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+<!-- CONTENEDOR GENERAL -->
+    <section id="contenedor-principal"> <!--Creamos una clase para dar formato al contenedor general-->
+    <!-- Creamos dos artículos a los que aplicaremos flexbox y flex-direction para que se dispongan en columas-->
+        <article id="columna-izquierda"><!--Damos formato al apartado de categorías-->
+            <section class="categoria"> <!--Cremos una clase para dar formato a la seccion categoría-->
+            <h2>ACCIÓN Y AVENTURA</h2>
+            <article>
+                <h3>Narnia: El León, la bruja y el armario</h3><!--Título de la película-->
+                <img src=./img/Narnia.jpg alt = "IMAGEN NARNIA"> <!--Carátula de la película, tiene su propia clase-->
+                <ul style="text-align: center;"> <a href= "categorias.html#AyA"> Más</a></ul> <!--Enlace a la sección de otra página centrado para mejorar la visibilidad-->
+            </article>
+            </section>
+    <!--Se repite lo mismo para las 7 categorías -TITULO, nombre película, acceso a la página de categorías para ver las películas de la categoría seleccionada-->
+            <section class="categoria">
+            <h2>COMEDIA</h2>
+            <article>
+                <h3>El lado bueno de las cosas</h3>
+                <img src=./img/Elladobuenodelascosas.jpg alt = "IMAGEN ELBDLC">
+                <ul style="text-align: center;"> <a href= "categorias.html#Comedia"> Más</a></ul>
+            </article>
+            </section>
+
+            <section class="categoria">
+            <h2>DRAMA</h2>
+            <article>
+                <h3>La vida es bella</h3>
+                <img src=./img/Lavidaesbella.jpg alt = "IMAGEN LVEB">
+                <ul style="text-align: center;"> <a href= "categorias.html#Drama"> Más</a></ul>
+            </article>
+            </section>
+
+            <section class="categoria">
+            <h2>CIENCIA FICCIÓN Y FANTASÍA</h2>
+            <article>
+                <h3>Dune Parte 2</h3>
+                <img src=./img/Dune2.jpg alt = "IMAGEN DUNE2">
+                <ul style="text-align: center;"> <a href= "categorias.html#CFyF"> Más</a></ul>>
+            </article>
+            </section>
+
+            <section class="categoria">
+            <h2>TERROR Y SUSPENSE</h2>
+            <article>
+                <h3>Expediente Warren: The Conjuring</h3>
+                <img src=./img/ExpedienteWarren.jpg alt = "IMAGEN EXPEDIENTE WARREN">
+                <ul style="text-align: center;"> <a href= "categorias.html#TyS"> Más</a></ul>
+            </article>
+            </section>
+
+            <section class="categoria">
+            <h2>DOCUMENTALES</h2>
+            <article>
+                <h3>Lo que el pulpo me enseñó</h3>
+                <img src=./img/LoQueElPulpoMeEnseño.jpg alt = "LO QUE EL PULPO ME ENSEÑÓ">
+                <ul style="text-align: center;"> <a href= "categorias.html#Docu"> Más</a></ul>
+            </article>
+            </section>
+
+            <section class="categoria">
+            <h2>INFANTILES Y FAMILIARES</h2>
+            <article>
+                <h3>Los Goonies</h3>
+                <img src=./img/LosGoonies.jpg alt = "Los Goonies">
+                <ul class="formato-enlace-ext"> <a href= "categorias.html#AyA"> Más</a></ul>
+            </article>
+            </section>
+        </article>
+    <!-- En el contenedor de la derecha irá el main, aquí mostraremos información sobre un personaje seleccionado -->
+        <article id="columna-derecha"> <!--Este apartado tendrá su propia clase, así podremos darle un formato particular-->
+            <h2>PERSONAJE ILUSTRE DE LA SEMANA</h2>
+            <h3><b>Johnny Depp</b></h3>
+            <img src="./img/JohnnyDepp.jpg" alt="Personaje ilustre">
+            <ul>
+            <p><b>Nacimiento:</b></p>
+            <li>9 de junio de 1963 (62 años), Owensboro, Kentucky, Estados Unidos</li>
+            </ul>
+            <ul>
+            <p><b>Participaciones destacadas:</b></p>
+            <li>Piratas del Caribe</li>
+            <li>Charlie y la fábrica de chocolate</li>
+            <li>Eduardo Manostijeras</li>
+            <li>Sleepy Hollow</li>
+            <li>Pesadilla en Elm Street</li>
+            <li>Ed Wood</li>
+            </ul>
+            <p><b>Galardones:</b></p>
+            <ul>
+            <li>Globo de Oro: Mejor actor - Comedia o musical</li>
+            <li>Premios del Sindicato de Actores: Mejor actor</li>
+            <li>Premios César: César Honorífico</li>
+            <li>Premios Saturn: Mejor Actor (x2)</li>
+            <li>Premios Sant Jordi de Cinematografía: Premio de honor</li>
+            <li>Además de varias nominaciones a los Óscar</li>
+        </article>
+    </section>>
+    <footer class="pie-pagina">
+        <h3><b>ENCUENTRATUPELI </b></h3>
+        <p><b>COLABORACIONES</b></p>
+        <ul>
+            <li>Netflix</li>
+            <li>Amazon Prime</li>
+            <li>HBO</li>
+            <li>IMDB</li>
+            <li>Filmaffinity</li>
+        </ul>
+    </footer>
+</body>

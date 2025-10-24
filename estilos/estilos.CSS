@@ -1,0 +1,502 @@
+/* Estilos comunes para todas las páginas */
+
+    /*Estilo para la cabecera*/
+    header {
+        background-image: url(./img/NuevoFondo.jpg); /*Colocamos la imagen como fondo */
+        height: 22%;
+        width: 100%;
+        background-position: center;    /*Centramos la imagen horizontal y verticalmente*/
+        background-color:  #333;
+        justify-content: center;        /*Alineamos el texto horizontalmente*/
+        background-repeat: no-repeat;
+        display: flex;                  /*Convertimos el header en un conteneder flexible */
+        margin: 20; 
+        align-items: center;            /*Alineamos el texto en el centro verticalmente*/   
+        color: #ffcc01;
+        font-size: small; 
+    }
+
+    /*Damos formato a la barra de navegación entre páginas */
+    .navbar {
+        background-color: #555;
+        padding: 10px 0; 
+        margin-bottom: 20px; 
+        border-style:inset;             /*Le damos un estilo al borde de la barra de navegación*/
+    }
+
+    /*Damos estilo a todos los enlaces de la barra de navegación */
+    .navbar a {
+        display: inline-block;          /*Mantenemos los elementos en línea pero esto permite cambios en tamaño, márgenes y transformaciones como un bloque. */
+        text-decoration: none;          /*Quitamos el subrayado del texto */
+        color: white;
+        font-weight: bold;              /*Ponemos el texto en negrita == <b> */
+        font-size: 35px;
+        transition: color 0.3s ease;    /* Añadimos una animación (de 2 seg) cuando el color del texto cambia */
+    }
+
+    /* Damos un estilo para cuando el ratón pasa por encima de la barra de navegación */
+    .navbar a:hover {
+        color: #ffcc00;  /* Establecemos un color para cuando pasemos el ratón por cada opción, esto activa transition */
+        transform: scale(1.5);
+    }
+    /*Damos formato al listado de la barra de navegación */
+    .navbar ul {
+        list-style: none;               /* Quitamos los puntos/guiones de los listados */
+        display: flex;
+        justify-content: center;        /* Centramos el listado */
+        gap: 30px;                      /* Gestionamos el espacio entre elementos */
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Formato para el pie de página */
+    footer {
+        background-color: #555;
+        text-align: center;
+        font-size: medium;
+        color: white;
+    }
+
+    /*Formato para el listado del pie de página */
+    footer ul {
+        list-style-type: none; /*Eliminamos los marcadores del listado*/
+        padding: 0; /*Eliminamos el margen y padding por defecto para alinear bien el texto*/
+        margin: 0;
+    }
+
+/*Estilos propios de la página categorías */
+
+    /*Damos formato a la barra de navegación propia de la página de categorías (Replicamos la anterior con ciertos cambios) */
+    .navbar2 {
+        background-color: silver;     /*Le damos un color más claro*/
+        padding: 10px 0; 
+        margin-bottom: 20px; 
+        border-style:inset;            
+    }
+        /*Damos estilo a todos los enlaces de la barra de navegación */
+        .navbar2 a {
+            display: inline-block;          
+            text-decoration: none;          
+            color: black;
+            font-weight: bold;              /*Ponemos el texto en negrita == <b> */
+            font-size: 25px;                /*Reducimos el tamaño de la letras*/
+            transition: color 0.3s ease;    
+        }
+
+        /* Damos un estilo para cuando el ratón pasa por encima de la barra de navegación */
+        .navbar2 a:hover {
+            color: blue;  /* Modificamos el color indicado para cuando pasamos el ratón por cada opción */
+            transform: scale(1.3); /*Reducimos el aumento de tamaño al seleccionar cada categoría */
+        }
+
+        /*Damos formato al listado de la barra de navegación */
+        .navbar2 ul {
+            list-style: none;               
+            display: flex;
+            justify-content: center;        
+            gap: 30px;                      
+            margin: 0;
+            padding: 0;
+        }
+    
+    /* Contenedor general de TODAS las categorías */
+     #contenedor-general {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        align-items: center;
+        background-image: url(./img/FondoCine.jpg); /*Incluimos la misma imagen de fondo que en la página principal*/
+    }
+
+    /* Contenedor para cada categoría */
+        .contenedor-principal-cat {
+            display: flex;
+            align-items: flex-start; /*Todos los elementos hijos se alinean con la parte superior del contenedor*/
+            flex-direction: column;
+            min-width: 1200px;
+            background-color: #333;
+            margin-bottom: 30px;
+            gap: 20px; /* Espacio entre los elementos hijos (en este caso la columna izquierda y la derecha) */
+            padding: 20px;
+        }
+
+            /*Alineamos el formato de el encabezado de nivel 2 con el de otras páginas */
+            .contenedor-principal-cat h2{
+                color: #ffd700;
+                font-size: 30px;
+                border-bottom: 2px solid #555;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+                margin-left: 400px; /*Centramos un poco el texto, no lo queremos centrado del todo */
+            }
+
+            /*Hacemos lo mismo con el encabezado de nivel 3 y las imágenes*/
+            .contenedor-principal-cat h3{
+                max-width: 400px; /***Algunos títulos son más largos, esto desalinea nuestro contenido, con esta propiedad unida a  flex: 0 0 400px hacemos que esto no pase y todo esté centrado */
+                font-style: oblique;
+                font-family: monospace;
+                color: white;
+                font-size: 25px;
+            }
+
+            .contenedor-principal-cat img{
+                display: block;
+                margin: 0 auto;
+                width: 400px;
+                height: 500px;
+            }
+
+    /* Contenedor para cada película dentro de las categorías */
+        .pelicula {
+            display: flex;
+            gap: 100px;
+            align-items: flex-start;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .columna-izquierda {
+            flex: 0 0 400px; /*Ver contenedor-principal-cat h3*/
+            flex-grow: 1;
+            margin-left: 120px;
+            text-align: center;
+        }
+
+        /*Damos un formato general a la columna derecha */
+        .columna-derecha {
+            flex-grow: 1;
+            color: silver;
+            font-size: 22px;
+            margin-top: 140px; 
+        }
+            /*Damos fortmato al listado de la columna derecha */
+            .columna-derecha ul {
+                list-style: none;
+                padding: 0;
+                margin: 5px 0 0 0;
+            }
+
+/*Estilos propios de la página contacto */
+
+    /*Formato para el formulario */
+    .formulario {
+        background-color: #555;
+        color: white;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 35px;
+    }
+    /*Formato de los encabezados de los elementos de entrada */
+    .formulario label {
+        font-family:'Courier New', Courier, monospace;
+        font-size: 35px;
+    }
+
+    /*Clase para dar formato formato al encabezado de nivel 2 de la página contacto */
+    .intro-formulario {
+        text-align:center;
+        font-size: 35px;
+        background-color: #333;
+        color: #ffcc00;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    /*Clase para dar formato al espacio donde el usuario introducirá el input que almacenaremos */
+    .input-form {
+        font-size: 30px;
+    }
+/*Estilos propios de la página principal */
+
+    /* Damos formato al contenedor principal (que agrupará las dos columnas en las que dividiremos el body de la página) */
+    #contenedor-principal {
+        background-image: url(./img/FondoCine.jpg); /*Le damos el formato deseado al fondo del contenedor principal */
+        display: flex; /*Convertimos el contenedor en un contenedor flexbox, para poder organizar los elementos hijos*/
+        gap: 20px; /* Espacio entre los elementos hijos (en este caso la columna izquierda y la derecha) */
+        padding: 20px;
+        flex-grow:1; /*Cubrimos todo el contenedor con los elementos interno*/
+        align-items: start; /*Mostramos en la parte superior de la página el contenido del contenedor principal */
+    }
+
+    /*Colna izquierda -> Accesos directos las diferentes categorías*/
+    #columna-izquierda {
+        display: flex;
+        flex-direction: column;
+        text-align: center; /*Centramos el texto */
+        font-size: 28px;
+        flex-grow: 1.2; /*Damos un poco más del tamaño total a la página de la izquierda, es la que más contenido tiene*/
+        gap: 20px;
+    }
+
+            /*Creamos una clase para la sección categorías */
+        .categoria {
+            border: 1px solid #333;
+            margin-bottom: 40px;
+            gap: 20px;
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #333;
+        }
+
+        /*Formato para el título nivel 2 de categrías*/
+        .categoria h2 {
+            text-align: center;
+            color: #ffd700;
+            font-size: 30px;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        /*Formato título nivel 3 de categorías*/
+        .categoria h3 {
+            font-style: oblique;
+            font-family: monospace;
+            color: white;
+            font-size: 25px;
+        }
+
+        /*Formato para las imágenes de categorías*/
+        .categoria img {
+            height: 400px;
+            width: 350px;
+        }
+
+
+    /* Columna derecha -> información adicional */
+    #columna-derecha {
+        display: flex;
+        flex-grow: 0.8;
+        font-size: 20px;
+        flex-direction: column; /*Alineamos los elementos de este article en vertical */
+        gap: 10px;
+        color: white; /*Letra blanca para seguir con la estética de la página */
+        background-color:  #333; /*Definimos un color de fondo*/
+        justify-content: center;
+        padding-left: 10px;
+    }
+        /*Formato para el encabezado de nivel 2 de la columna derecha (El mismo que el de la columna izquierda */
+        #columna-derecha h2 {
+            text-align: center;
+            color: #ffd700;
+            font-size: 30px;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        /*Formato para el encabezado de nivel 3 de la columna derecha(El mismo que el de la columna izquierda + centrar texto)*/
+        #columna-derecha h3 {
+            font-style: oblique;
+            font-family: monospace;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        /*Formato imagen/es del personaje (le damos tamaño y centramos la imagen) */
+        #columna-derecha img {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        }
+
+        /*Damos un formato característico a los listados de la columa derecha(no queremos que se muestren los indicadores */
+        #columna-derecha li {
+        list-style-type: none;
+        }
+
+/*Estilos propios de la página estrenos */
+
+    /* Contenedor principal de la página estrenos */
+        .cont-ppal-est {
+            display: flex;
+            gap: 100px;
+            align-items: flex-start;
+            border-bottom: 1px solid #ccc;
+            background-color: #333;
+            justify-content: center;
+        }
+
+        /*Contenedor para el contenido en el sector izquierdo, estrenos */
+        .Estrenos {
+            text-align: center;
+            color: #ffd700;
+            font-size: 30px;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+            .Estrenos h3 {
+                text-align: center;
+                color: silver;
+            }
+
+        /*Contenedor para el contenido en el sector derecho, eventos */
+        .Eventos {
+            text-align: center;
+            color: #ffd700;
+            font-size: 30px;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+        }
+
+        /*Formato de la tabla dentro del contenedor de eventos */
+            .calendario {
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                font-size: 45px;
+                min-width: 200px;
+                height: 400px;
+                color: white;
+            }
+
+            /*Formato para los textos dentro del calendario */
+            .calendario th, .calendario td {
+                border: 1px solid #ccc;
+                width: 14.28%;
+                height: 100px;
+                text-align: center;
+                vertical-align: top;
+                padding: 5px;
+            }
+/*Estilos propios de la página películas */
+
+    main {
+        display: flex;
+        flex-wrap:wrap; /*Si alguna de las películas no entra en la página en vertical y sí en horizontal, se mostrará a la derecha*/
+        flex-wrap: wrap;
+        padding: 2em;
+        gap: 2em;
+        background-color: #333;
+    }
+
+    main h2 {
+        text-align: center;
+        color: #ffd700;
+        font-size: 30px;
+        border-bottom: 2px solid #555;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+
+    }
+
+    .peliculas {
+        display: flex;
+        justify-content: center;
+        max-width: 1500px;
+        gap: 200px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+    }
+
+    .peliculas img {
+        width: 400px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .peliculas h4 {
+        font-size: 22px;
+    }
+
+    .peliculas h5 {
+        font-size: 22px;
+    }
+    /* Ocultar todas las categorías por defecto */
+    .categoria-pelis {
+        display: none;
+        gap: 60px; /*Distancia entre las películas */
+        width: 2000px;
+    }
+
+/* Mostrar la categoría seleccionada */
+.categoria-pelis:target {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+        /* Mostramos una de las categorías */
+        .categoria-pelis.visible {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .categoria-pelis:target {
+            display: flex;  /* Muestra la activa */
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    /* Barra de categorías */
+    .barra-categorias {
+        color: black;
+        font-size: 35px;
+        text-align: center;
+        background-color: white;
+        padding: 1em;
+    }
+        /*Damos formato al listado de la barra categorías */
+        .barra-categorias ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            padding: 0;
+        }
+
+        .barra-categorias a {
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+    /*Las categorías ocultas tendrán un fondo azul */
+
+        .barra-categorias a:hover {
+        background-color: #2980b9;
+        }
+
+        /*Cambiamos el formato de la categoría activa, la que se nos está mostrando */
+        .barra-categorias a.activa {
+        background-color: #1abc9c;
+        }
+    
+    /*El elemento seleccionado se mostrará mientras que el resto se mantendrán ocultos */
+    .contenedor-principal-cat:target {
+    display: block;
+    }
+
+    .ppal-pelicula  {
+        width: 1000px;
+        margin-left: 30px;
+        text-align: center;
+        font-size: 20px;
+        color: silver;
+    }
+
+    .ppal-pelicula img {
+        width: 300px;
+    }
+
+    .adi-pelicula {
+        width: 1000px;
+        color: silver;
+        align-items: center;
+    }
