@@ -425,21 +425,6 @@
     justify-content: center;
 }
 
-
-        /* Mostramos una de las categorías */
-        .categoria-pelis.visible {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .categoria-pelis:target {
-            display: flex;  /* Muestra la activa */
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
     /* Barra de categorías */
     .barra-categorias {
         color: black;
